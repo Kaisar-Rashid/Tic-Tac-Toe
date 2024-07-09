@@ -120,15 +120,20 @@ main{
   .btn{
     width: 50px;
     height: 50px;
+    font-size: 15px;
+    padding: 15px;
   }
   .Reset{
     width: 100px;
   }
   .score{
     width: 200px;
+    height: 100px;
   }
   .status{
     width: 200px;
+    height: 100px;
 
   }
+
 }
