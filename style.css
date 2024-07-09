@@ -133,7 +133,11 @@ main{
   .status{
     width: 200px;
     height: 100px;
-
+    position: relative;
+    top: 76px;
   }
-
+  .cen{
+   position: relative;
+   top: 100px;
+  }
 }
