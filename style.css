@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1A2130;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal
+}
+.box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 10px;
+  width: 400px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #A91D3A;
+  position: relative;
+  bottom: 50px;
+}
+.box:hover{
+  background-color: #1A2130;
+  transition: all 0.3s ease-in-out;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.btn{
+  background-color: white;
+  color: #1A2130;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+  width: 100px;
+  cursor: pointer;
+  padding: 25px 0px;
+}
+.btn:hover{
+  border-radius: 0%;
+  background-color: #A91D3A;
+  transition: all 0.3s ease-in-out;
+
+}
+.Reset{
+  height: 40px;
+  width: 300px;
+  border: none;
+  font-size: 25px;
+  position: relative;
+  bottom: 30px;
+  color: #1A2130;
+  background-color: #A91D3A;
+  letter-spacing: 2px;  
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  color: white;
+}
+.status{
+  height: 60px;
+  width: 90vw;
+  border: none;
+  font-size: 35px;
+  color: #1A2130;
+  background-color: #A91D3A;
+  letter-spacing: 2px;  
+  cursor: pointer;
+  display: block;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  top: 7px;
+  color: white;
+
+}
+.Reset:hover{
+  background-color: #1A2130;
+  color: #A91D3A;
+  border: 1px solid #A91D3A;
+  transition: all 0.3s ease-in-out;
+}
+
+.score{
+  height: 60px;
+  width: 90vw;
+  border: none;
+  font-size: 35px;
+  padding: 8px;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  bottom: 80px;
+  color: #1A2130;
+  background-color: #A91D3A;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+
+}
+.cen{
+  display: grid;
+  place-items: center;
+}
