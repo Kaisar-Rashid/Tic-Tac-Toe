@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scoreButton.innerText = `Score: X=${scoreX}, O=${scoreO}`;
   }
 
-  buttons.forEach((btn, index) => {
+  buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (gameActive && btn.innerText === "") {
         btn.innerText = currentPlayer;

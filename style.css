@@ -73,10 +73,11 @@ main{
   background-color: #A91D3A;
   letter-spacing: 2px;  
   cursor: pointer;
+ 
   display: block;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  position: relative;
+ position: relative; 
   top: 7px;
   color: white;
 
@@ -133,7 +134,7 @@ main{
   .status{
     width: 200px;
     height: 100px;
-    margin-top:100px;
+    margin-top:69px;
   }
   .cen{
    position: relative;
