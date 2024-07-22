@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic Tac Toe</title>
+    <title>Tic Tac Toe with LocalStorage</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <!--Adding LocalStorage to save the score-->
-      <!--Add a Different button for reset game and reset score & save it to localStorage-->
-
       <div class="grid">
-        <div class="score">Score:</div>
+        <div class="score">Score: <span id="score"></span></div>
         <div class="cen">
           <div class="box">
             <div class="1 btn"></div>
@@ -25,7 +22,10 @@
             <div class="8 btn"></div>
             <div class="9 btn"></div>
           </div>
-          <button class="Reset">Reset</button>
+          <div class="button-container">
+            <button class="Reset">Play Again</button>
+            <button class="Reset-score">Reset Scores</button>
+          </div>
         </div>
         <button class="status"></button>
       </div>

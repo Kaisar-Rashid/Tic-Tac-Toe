@@ -5,11 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
   let scoreButton = document.querySelector(".score");
   let buttons = document.querySelectorAll(".btn");
   let Display = document.querySelector(".box");
+  let resetScoresButton = document.querySelector(".Reset-score");
+
+  let scoreX = JSON.parse(localStorage.getItem("scoreX")) || 0;
+  let scoreO = JSON.parse(localStorage.getItem("scoreO")) || 0;
+
+  scoreButton.innerText = `Score: X=${scoreX}, O=${scoreO}`;
 
   //declaring all global variable
   let currentPlayer = "X";
-  let scoreX = 0;
-  let scoreO = 0;
   let gameActive = true;
 
   // winning possiblities
@@ -59,12 +63,22 @@ document.addEventListener("DOMContentLoaded", () => {
     gameActive = true;
   }
 
+  function resetScores() {
+    scoreX = 0;
+    scoreO = 0;
+    localStorage.setItem("scoreX", JSON.stringify(scoreX));
+    localStorage.setItem("scoreX", JSON.stringify(scoreX));
+    scoreButton.innerText = `Score: X=${scoreX}, O=${scoreO}`;
+  }
+
   // update score
   function updateScore(player) {
     if (player === "X") {
       scoreX++;
+      localStorage.setItem("scoreX", JSON.stringify(scoreX));
     } else {
       scoreO++;
+      localStorage.setItem("scoreX", JSON.stringify(scoreX));
     }
     scoreButton.innerText = `Score: X=${scoreX}, O=${scoreO}`;
   }
@@ -94,4 +108,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   resetButton.addEventListener("click", resetGame);
+  resetScoresButton.addEventListener("click", resetScores);
 });
